@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: palevioletred;
+    margin: 2em;
+}
+
+.container-flex {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    align-items: center;
+    gap: 2em;
+}
+
+.container-flex.dir-column {
+    flex-direction: column;
+}
+
+header,
+footer {
+    width: 90%;
+    height: 5em;
+    background-color: rgb(102, 194, 186);
+    text-align: center;
+}
+
+article {
+    width: 74%;
+    height: 32em;
+    background-color: rgb(245, 106, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    margin-right: 5%;
+}
+
+article .container-flex {
+    gap: 0;
+}
+
+article img {
+    width: 250px;
+    height: 250px;
+}
+
+aside {
+    width: 20%;
+    height: 32em;
+    background-color: rgb(145, 213, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
